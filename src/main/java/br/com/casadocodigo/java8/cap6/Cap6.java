@@ -7,6 +7,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.function.BiFunction;
 import java.util.function.Function;
+import java.util.function.Supplier;
 
 // method reference
 public class Cap6 {
@@ -50,9 +51,4 @@ public class Cap6 {
         System.out.println(danilo);
 
     }
-}
-
-@FunctionalInterface
-interface Supplier<T> {
-    T get();
 }

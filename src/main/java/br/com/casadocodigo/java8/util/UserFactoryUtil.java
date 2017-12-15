@@ -9,7 +9,7 @@ public class UserFactoryUtil {
         User[] user = new User[3];
         user[0] = new User("Danilo Almeida", 150);
         user[1] = new User("Diogo Almeida", 120);
-        user[2] = new User("Daniele Almeida", 190);
+        user[2] = new User("Daniele Almeida", 90);
 
         return Arrays.asList(user);
     }
