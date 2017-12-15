@@ -1,4 +1,4 @@
-package br.com.casadocodigo.java8.cap2;
+package br.com.casadocodigo.java8;
 
 import br.com.casadocodigo.java8.util.User;
 import br.com.casadocodigo.java8.util.UserFactoryUtil;

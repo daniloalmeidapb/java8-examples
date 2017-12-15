@@ -1,4 +1,4 @@
-package br.com.casadocodigo.java8.cap3;
+package br.com.casadocodigo.java8;
 
 // functional interface
 public class Cap3 {
