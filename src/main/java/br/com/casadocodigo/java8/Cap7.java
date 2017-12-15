@@ -71,11 +71,22 @@ public class Cap7 {
         // get user max points
         Optional<User> maxUser = users.stream()
                 .max(Comparator.comparing(User::getPoints));
-        System.out.println(maxUser);
+        System.out.println(maxUser.orElse(null));
+
+        User maxUser1 = users.stream()
+                .max(Comparator.comparing(User::getPoints))
+                .orElse(null);
+        System.out.println(maxUser1);
 
         Optional<String> maxName = users.stream()
                 .max(Comparator.comparing(User::getPoints))
                 .map(User::getName);
-        System.out.println(maxName);
+        System.out.println(maxName.orElse(null));
+
+        String maxName1 = users.stream()
+                .max(Comparator.comparing(User::getPoints))
+                .map(User::getName)
+                .orElse(null);
+        System.out.println(maxName1);
     }
 }
