@@ -1,4 +1,4 @@
-package br.com.k19.java8.util;
+package br.com.casadocodigo.java8.util;
 
 public class User {
     private String name;
