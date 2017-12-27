@@ -1,7 +1,7 @@
 package br.com.casadocodigo.java8;
 
 import br.com.casadocodigo.java8.util.User;
-import br.com.casadocodigo.java8.util.UserFactoryUtil;
+import br.com.casadocodigo.java8.util.UserBuilder;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -10,11 +10,11 @@ import java.util.stream.IntStream;
 // streams and collectors
 public class Cap7 {
     public static void main(String[] args) {
-        List<User> users = UserFactoryUtil.getUserList();
+        List<User> users = UserBuilder.getUserList();
 
         // become moderator the teen first users
         users.sort(Comparator.comparingInt(User::getPoints).reversed());
-        //users.subList(0, 10).forEach(User::becomeModerator);
+        users.subList(0, 1).forEach(User::becomeModerator);
 
         // become moderator users with more than hundred points
         users.stream()

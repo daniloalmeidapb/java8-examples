@@ -1,7 +1,7 @@
 package br.com.casadocodigo.java8;
 
 import br.com.casadocodigo.java8.util.User;
-import br.com.casadocodigo.java8.util.UserFactoryUtil;
+import br.com.casadocodigo.java8.util.UserBuilder;
 
 import java.util.List;
 import java.util.function.Consumer;
@@ -9,7 +9,7 @@ import java.util.function.Consumer;
 // default methods
 public class Cap4 {
     public static void main(String[] args) {
-        List<User> users = UserFactoryUtil.getUserList();
+        List<User> users = UserBuilder.getUserList();
 
         // interface consumer
         Consumer<User> showMessage = user -> System.out.println("before print names");

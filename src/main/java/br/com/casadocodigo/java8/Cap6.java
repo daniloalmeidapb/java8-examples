@@ -1,7 +1,7 @@
 package br.com.casadocodigo.java8;
 
 import br.com.casadocodigo.java8.util.User;
-import br.com.casadocodigo.java8.util.UserFactoryUtil;
+import br.com.casadocodigo.java8.util.UserBuilder;
 
 import java.util.Comparator;
 import java.util.List;
@@ -12,7 +12,7 @@ import java.util.function.Supplier;
 // method reference
 public class Cap6 {
     public static void main(String[] args) {
-        List<User> users = UserFactoryUtil.getUserList();
+        List<User> users = UserBuilder.getUserList();
 
         users.forEach(User::becomeModerator);
 
@@ -49,6 +49,5 @@ public class Cap6 {
         User danilo = createUserWithArgument.apply("Danilo", 50);
         System.out.println();
         System.out.println(danilo);
-
     }
 }

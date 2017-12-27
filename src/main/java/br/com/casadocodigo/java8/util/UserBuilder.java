@@ -3,7 +3,7 @@ package br.com.casadocodigo.java8.util;
 import java.util.Arrays;
 import java.util.List;
 
-public class UserFactoryUtil {
+public class UserBuilder {
 
     public static List<User> getUserList() {
         User[] user = new User[3];
