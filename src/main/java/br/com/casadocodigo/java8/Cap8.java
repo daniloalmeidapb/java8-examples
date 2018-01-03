@@ -87,9 +87,6 @@ public class Cap8 {
                 .findFirst() // short circuit
                 .getAsInt();
         System.out.println("More than 100: " + moreThan100);
-
-        // flat map
-
     }
 }
 

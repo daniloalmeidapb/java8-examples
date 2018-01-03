@@ -14,6 +14,12 @@ public class User {
         this.moderator = false;
     }
 
+    public User(String name, int points, boolean b) {
+        this.name = name;
+        this.points = points;
+        this.moderator = b;
+    }
+
     @Override
     public String toString() {
         return String.format("%s %s", "User:", getName());
