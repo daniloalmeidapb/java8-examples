@@ -68,9 +68,15 @@ public class Cap10 {
 
         LocalDateTime localDateTime = LocalDateTime.now();
         String result = localDateTime.format(DateTimeFormatter.ISO_TIME);
-        System.out.println("Formatting");
+        System.out.println("Formatting date in string");
         System.out.println(result);
-        System.out.println(date.format(DateTimeFormatter.ofPattern("dd/MM/yy")));
+        System.out.println(date.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        String dateString = "19/11/1990";
+        LocalDate convert = LocalDate.parse(dateString, formatter);
+        System.out.println("Formatting string in date");
+        System.out.println(convert);
 
         long days = ChronoUnit.DAYS.between(tomorrow, today);
         long months = ChronoUnit.MONTHS.between(tomorrow, today);
